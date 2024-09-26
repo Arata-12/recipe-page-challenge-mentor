@@ -1,0 +1,149 @@
+:root {
+    --white-color: hsl(0, 0%, 100%);
+    --Stone-100: hsl(30, 54%, 90%);
+    --Stone-150: hsl(30, 18%, 87%);
+    --Stone-600: hsl(30, 10%, 34%);
+    --Stone-900: hsl(24, 5%, 18%);
+    --Brown-800: hsl(14, 45%, 36%);
+    --Rose-800: hsl(332, 51%, 32%);
+    --Rose-50: hsl(330, 100%, 98%);
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.fz-16 {
+    font-size: 16px;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Young Serif" , sans-serif;
+    background-color: var(--Stone-100);
+}
+
+.container .box {
+    background-color: var(--white-color);
+    margin: 30px auto 0;
+    border-radius: 10px;
+}
+.box {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    position: relative;
+    flex-direction: column;
+    margin: 100px 100px ;
+    width: fit-content;
+}
+.box img {
+    margin: 20px;
+    width: 645px;
+    border-radius: 10px;
+}
+/* style preparetion box*/
+.box .prepa-box {
+    margin-top: 40px;
+    background-color: var(--Rose-50);
+    padding: 20px;
+    border-radius: 10px;
+}
+.box .prepa-box h4 {
+    color: var(--Rose-800);
+}
+.box .prepa-box h4,
+.box .prepa-box ul {
+    padding: 10px;
+}
+.box .prepa-box ul li {
+    padding-bottom: 10px;
+    margin-left: 20px;
+}
+.box .prepa-box ul li span {
+    color: var(--Stone-600);
+}
+/*END  style preparetion box*/
+/* style class*/
+.mt-30 {
+    margin-top: 30px;
+}
+.c-brown {
+    color: var(--Brown-800);
+}
+.b-line {
+    border-bottom: 1px solid var(--Stone-150);
+    padding-bottom: 30px;
+}
+/*END  style class*/
+/*START  style ingredation box*/
+.ingred-box ul li {
+    margin-top: 20px;
+    margin-left: 30px;
+    color: var(--Stone-600);
+}
+/*END  style ingredation box*/
+/*START  style instruction box*/
+.instruc-box ol li {
+    padding-left: 10px;
+    margin-top: 20px;
+    margin-left: 30px;
+    color: black;
+}
+.instruc-box ol li span {
+    color: var(--Stone-600);
+}
+/*END  style instruction box*/
+/*START  style nutrition box*/
+.nut-box {
+    position: relative;
+}
+.nut-box p {
+    color: var(--Stone-600);
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.nut-box  span{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 10px;
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    color: var(--Stone-600);
+}
+.nut-box span:not(:last-of-type) {
+    border-bottom: 1px solid var(--Stone-150);
+}
+.nut-box span .value {
+    margin: 0 auto 20px;
+    color: var(--Brown-800);
+    border-color: transparent;
+}
+/*END  style nutrition box*/
+p {
+    padding: 0 auto;
+    margin-top: 5px;
+    color: var(--Stone-600);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.6;
+ }
+/* style media phone*/
+@media (max-width: 767px) {
+    p {
+        justify-content: flex-end;
+        margin: 10px auto;
+        color: var(--Stone-600);
+    }
+    .box {
+        margin: 0;
+        width: fit-content;
+    }
+    .box img {
+        width: 350px;
+    }
+}
+
